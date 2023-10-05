@@ -7,10 +7,10 @@ import { SocialLink } from '@/typings/SocialLink'
 import Link from 'next/link'
 
 const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
-    const [isHoveringId, setIsHovered] = useState(0);
-    const onMouseEnter = (id: number) => setIsHovered(id);
-    const onMouseLeave = () => setIsHovered(0);
-    const EMAIL_ID: number = 420;
+    const [isHoveringId, setIsHovered] = useState(0)
+    const onMouseEnter = (id: number) => setIsHovered(id)
+    const onMouseLeave = () => setIsHovered(0)
+    const EMAIL_ID: number = 420
 
     return (
         <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-4'>

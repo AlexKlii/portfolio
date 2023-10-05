@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import Head from 'next/head'
 
-import { fetchSocialLinks } from '@/utils/fetchSocialLinks';
+import { fetchSocialLinks } from '@/utils/fetchSocialLinks'
 
 
 const Home = async () => {
