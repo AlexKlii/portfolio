@@ -1,11 +1,20 @@
 # Changelog
 
-## 0.1.0 (2023-09-01)
+## 0.2.0 (2023-10-05)
 
-### feat: Init project
+### feat: Implement Header Component
 
-- Implement NEXT.js
+- Add `socialLinks` data
+- Add `SocialLink` typings
+- Add an API route to fetch the `socialLinks` data.
+- Implement `.env` file
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.1.0 (2023-09-01)
+
+  ### feat: Init project
+
+  - Implement NEXT.js
 <details>
