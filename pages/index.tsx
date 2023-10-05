@@ -2,11 +2,21 @@ import Header from '@/components/Header'
 import Head from 'next/head'
 
 import { fetchSocialLinks } from '@/utils/fetchSocialLinks'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { SocialLink } from '@/typings/SocialLink'
 
+export const getStaticProps: GetStaticProps<{socialLinks: SocialLink[]}> = async () => {
+  const socialLinks: SocialLink[] = await fetchSocialLinks()
 
-const Home = async () => {
-  const socialLinks = await fetchSocialLinks()
+  return {
+      props: {
+          socialLinks
+      }, 
+      revalidate: 10
+  }
+}
 
+const Home = ({ socialLinks }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className='bg-[rgb(33,33,33)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
       <Head>

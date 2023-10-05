@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.2 (2023-10-05)
+
+### fix: Error prerendering
+
+- Move `page.tsx` component from `app` directory to `pages` directory and rename to `index.tsx`
+- Add `_app.tsx` and `_document.tsx` files
+- Move `globals.css` from `app` directory to `styles` directory
+- Move `favicon.ico` from `app` directory to `public` directory
+- Remove unnecessary `layout` component
+- Remove `app` directory
+
 ## 0.2.1 (2023-10-05)
 
 ### fix: Error prerendering
