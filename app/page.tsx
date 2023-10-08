@@ -11,6 +11,8 @@ import { SkillInterface } from '@/typings/SkillInterface'
 import { fetchSkills } from '@/utils/fetchSkills'
 import { Project } from '@/typings/Project'
 import { fetchProjects } from '@/utils/fetchProjects'
+import { Contact } from '@/typings/Contact'
+import { fetchContact } from '@/utils/fetchContact'
 
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
@@ -18,6 +20,7 @@ import About from '@/components/About'
 import WorkExperience from '@/components/WorkExperience'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
+import ContactMe from '@/components/ContactMe'
  
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -35,6 +38,7 @@ const Home = async () => {
     const experiences: Experience[] = await fetchExperiences()
     const skills: SkillInterface[] = await fetchSkills()
     const projects: Project[] = await fetchProjects()
+    const contact: Contact = await fetchContact()
 
     return (
         <div className='bg-[rgb(33,33,33)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
@@ -61,7 +65,9 @@ const Home = async () => {
                     <Projects projects={projects} />
                 </section>
 
-                <section id='contact' className='snap-center'></section>
+                <section id='contact' className='snap-center'>
+                    <ContactMe contact={contact} />
+                </section>
 
                 {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
                 <section className='snap-end h-44 sm:hidden'></section>
