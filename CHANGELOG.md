@@ -1,19 +1,29 @@
 # Changelog
 
-## 0.3.0 (2023-10-08)
+## 0.4.0 (2023-10-08)
 
-### feat: Implement Hero Component
+### feat: Implement About Component
 
-- Add `heroData` data file
-- Add `HeroData` typings file
-- Add an API route to fetch the `heroData` data
-- Add `BackgroundCircles` component
-- Add hero picture in `public` folder
-- Add `Hero` component
+- Add `about` data file
+- Add `About` typings file
+- Add an API route to fetch the `about` data
+- Add about picture in `public` folder
+- Add `About` component
 
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.3.0 (2023-10-08)
+
+  ### feat: Implement Hero Component
+
+  - Add `heroData` data file
+  - Add `HeroData` typings file
+  - Add an API route to fetch the `heroData` data
+  - Add `BackgroundCircles` component
+  - Add hero picture in `public` folder
+  - Add `Hero` component
+    
   ## 0.2.4 (2023-10-08)
 
   ### fix: Error prerendering

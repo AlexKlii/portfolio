@@ -1,4 +1,4 @@
-export type HeroData = {
+export type HeroInterface = {
     typeWriterWords: string[],
     src: string
 }
