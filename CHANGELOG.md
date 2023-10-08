@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.4 (2023-10-08)
+
+### fix: Error prerendering
+
+- Edit `dynamic` fetch setting on `page.tsx`
+
 ## 0.2.3 (2023-10-05)
 
 ### fix: Error prerendering

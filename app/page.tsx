@@ -11,9 +11,7 @@ export const metadata: Metadata = {
   icons: '/favicon.ico'
 }
 
-// async function getSocialLinks(): Promise<SocialLink[]> {
-//     return await fetchSocialLinks()
-// }
+export const dynamic = 'force-dynamic'
 
 const Home = async () => {
     const socialLinks: SocialLink[] = await fetchSocialLinks()
