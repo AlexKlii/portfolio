@@ -1,17 +1,23 @@
 # Changelog
 
-## 0.8.0 (2023-10-08)
+## 0.9.0 (2023-10-08)
 
-### feat: Implement ContactMe Component
+### feat: Implement Footer Component
 
-- Add `contactMe` data file
-- Add `Contact` typings file
-- Add an API route to fetch the `contactMe` data
-- Add `ContactMe` component
-- fix css on `HeroComponent`
+- Implement `Footer` Component
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.8.0 (2023-10-08)
+
+  ### feat: Implement ContactMe Component
+
+  - Add `contactMe` data file
+  - Add `Contact` typings file
+  - Add an API route to fetch the `contactMe` data
+  - Add `ContactMe` component
+  - fix css on `HeroComponent`
 
   ## 0.7.0 (2023-10-08)
 
