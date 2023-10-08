@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "title": "Frontend Developer",
+        "src": "imgs/experiences/axiocode.jpg",
+        "localization": "Axiocode",
+        "langages": [
+            "angular",
+            "typescript",
+            "symfony",
+            "sql"
+        ],
+        "dateStart": 1477970400000,
+        "dateStop": 1554085200000,
+        "details": [
+            "Developing an Angular 4 application for the Federation Equestre Internationale (FEI)",
+            "Gathering customer requirements",
+            "Development in Symfony 2-4 (API)",
+            "Managing SQL Server database"
+        ],
+        "isActive": true
+    },
+    {
+        "id": 2,
+        "title": "E-commerce",
+        "src": "imgs/experiences/ecommerce.jpg",
+        "localization": "Self-Employed Business",
+        "langages": [
+            "shopify",
+            "translate",
+            "fb"
+        ],
+        "dateStart": 1554085200000,
+        "dateStop": 1567304400000,
+        "details": [
+            "Creating, launching, and maintaining a Shopify website",
+            "Managing Facebook ads",
+            "Online sales of various products"
+        ],
+        "isActive": true
+    },
+    {
+        "id": 3,
+        "title": "Alyra School",
+        "src": "imgs/experiences/alyra.svg",
+        "localization": "Student",
+        "langages": [
+            "react",
+            "nextjs",
+            "solidity",
+            "rust"
+        ],
+        "dateStart": 1683504000000,
+        "dateStop": 1691452800000,
+        "details": [
+            "Creating, launching, and maintaining React.js/Next.js websites",
+            "Developing Solidity smart contracts"
+        ],
+        "isActive": true
+    }
+]

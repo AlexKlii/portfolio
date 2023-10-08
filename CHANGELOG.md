@@ -1,18 +1,31 @@
 # Changelog
 
-## 0.4.0 (2023-10-08)
+## 0.5.0 (2023-10-08)
 
-### feat: Implement About Component
+### feat: Implement Experiences Section
 
-- Add `about` data file
-- Add `About` typings file
-- Add an API route to fetch the `about` data
-- Add about picture in `public` folder
-- Add `About` component
+- Add `experiences` data file
+- Add `Experiences` typings file
+- Add an API route to fetch the `experiences` data
+- Add experience pictures in `public` folder
+- Add `WorkExperience` component
+- Add `ExperienceCard` component
+- Add `Skill` component
+- Add `TooltipSkill` component
 
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.4.0 (2023-10-08)
+
+  ### feat: Implement About Component
+
+  - Add `about` data file
+  - Add `About` typings file
+  - Add an API route to fetch the `about` data
+  - Add about picture in `public` folder
+  - Add `About` component
+  
   ## 0.3.0 (2023-10-08)
 
   ### feat: Implement Hero Component
