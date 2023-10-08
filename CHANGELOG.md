@@ -1,17 +1,27 @@
 # Changelog
 
-## 0.6.0 (2023-10-08)
+## 0.7.0 (2023-10-08)
 
-### feat: Implement Skills Component
+### feat: Implement Projects Component
 
-- Add `skills` data file
-- Add `SkillsInterface` typings file
-- Add an API route to fetch the `skills` data
-- Add `Skills` component
+- Add `projects` data file
+- Add `Projects` typings file
+- Add an API route to fetch the `projects` data
+- Add projects pictures in `public` folder
+- Add `Projects` component
 
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.6.0 (2023-10-08)
+
+  ### feat: Implement Skills Component
+
+  - Add `skills` data file
+  - Add `SkillsInterface` typings file
+  - Add an API route to fetch the `skills` data
+  - Add `Skills` component
+  
   ## 0.5.1 (2023-10-08)
 
   ### fix: Update experiences data
