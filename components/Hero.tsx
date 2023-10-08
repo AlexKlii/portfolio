@@ -32,8 +32,8 @@ export default function HeroComponent({ words, src }: { words: string[], src: st
                         <button className='heroButton'>About</button>
                     </Link>
 
-                    <Link href='#experience'>
-                        <button className='heroButton'>Experience</button>
+                    <Link href='#experiences'>
+                        <button className='heroButton'>Experiences</button>
                     </Link>
 
                     <Link href='#skills'>

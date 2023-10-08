@@ -5,10 +5,13 @@ import { HeroInterface } from '@/typings/Hero'
 import { fetchHero } from '@/utils/fetchHero'
 import { AboutInterface } from '@/typings/About'
 import { fetchAbout } from '@/utils/fetchAbout'
+import { Experience } from '@/typings/Experience'
+import { fetchExperiences } from '@/utils/fetchExperiences'
 
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import WorkExperience from '@/components/WorkExperience'
  
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -23,6 +26,7 @@ const Home = async () => {
     const socialLinks: SocialLink[] = await fetchSocialLinks()
     const hero: HeroInterface = await fetchHero()
     const about: AboutInterface = await fetchAbout()
+    const experiences: Experience[] = await fetchExperiences()
 
     return (
         <div className='bg-[rgb(33,33,33)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
@@ -37,7 +41,9 @@ const Home = async () => {
                     <About about={about.about} src={about.src} />
                 </section>
 
-                <section id='experience' className='snap-center'></section>
+                <section id='experiences' className='snap-center'>
+                    <WorkExperience experiences={experiences} />
+                </section>
 
                 <section id='skills' className='snap-center'></section>
 
