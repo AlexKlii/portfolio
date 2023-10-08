@@ -1,18 +1,28 @@
 # Changelog
 
-## 0.7.0 (2023-10-08)
+## 0.8.0 (2023-10-08)
 
-### feat: Implement Projects Component
+### feat: Implement ContactMe Component
 
-- Add `projects` data file
-- Add `Projects` typings file
-- Add an API route to fetch the `projects` data
-- Add projects pictures in `public` folder
-- Add `Projects` component
+- Add `contactMe` data file
+- Add `Contact` typings file
+- Add an API route to fetch the `contactMe` data
+- Add `ContactMe` component
+- fix css on `HeroComponent`
 
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.7.0 (2023-10-08)
+
+  ### feat: Implement Projects Component
+
+  - Add `projects` data file
+  - Add `Projects` typings file
+  - Add an API route to fetch the `projects` data
+  - Add projects pictures in `public` folder
+  - Add `Projects` component
+  
   ## 0.6.0 (2023-10-08)
 
   ### feat: Implement Skills Component
