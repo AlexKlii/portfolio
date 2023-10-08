@@ -1,4 +1,4 @@
 export type HeroInterface = {
-    typeWriterWords: string[],
+    typeWriterWords: string[]
     src: string
 }

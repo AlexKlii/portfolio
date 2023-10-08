@@ -1,4 +1,4 @@
 export type AboutInterface = {
-    about: string,
+    about: string
     src: string
 }
