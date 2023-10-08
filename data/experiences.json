@@ -41,9 +41,9 @@
     },
     {
         "id": 3,
-        "title": "Alyra School",
+        "title": "Blockchain Developer",
         "src": "imgs/experiences/alyra.svg",
-        "localization": "Student",
+        "localization": "Alyra School",
         "langages": [
             "react",
             "nextjs",

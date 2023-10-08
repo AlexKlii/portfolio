@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1 (2023-10-08)
+
+### fix: Update experiences data
+
+- Update experiences data json file
+
 ## 0.5.0 (2023-10-08)
 
 ### feat: Implement Experiences Section
