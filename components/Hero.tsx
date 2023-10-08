@@ -6,7 +6,7 @@ import BackgroundCirecles from './BackgroundCircles'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Hero({ words, src }: { words: string[], src: string }) {
+export default function HeroComponent({ words, src }: { words: string[], src: string }) {
     const [ text ] = useTypewriter({ words, loop: true, delaySpeed: 420 })
 
     return (
@@ -16,7 +16,7 @@ export default function Hero({ words, src }: { words: string[], src: string }) {
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
                 loader={() => src}
                 src={src}
-                alt='Photo de profil'
+                alt='Profile Picture'
                 width={420}
                 height={420}
             />
