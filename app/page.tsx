@@ -21,6 +21,7 @@ import WorkExperience from '@/components/WorkExperience'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import ContactMe from '@/components/ContactMe'
+import Footer from '@/components/Footer'
  
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -72,7 +73,7 @@ const Home = async () => {
                 {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
                 <section className='snap-end h-44 sm:hidden'></section>
 
-                <footer></footer>
+                <Footer src={hero.src}></Footer>
             </main>
         </div>
     )
