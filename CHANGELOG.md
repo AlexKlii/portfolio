@@ -1,26 +1,35 @@
 # Changelog
 
-## 0.5.1 (2023-10-08)
+## 0.6.0 (2023-10-08)
 
-### fix: Update experiences data
+### feat: Implement Skills Component
 
-- Update experiences data json file
-
-## 0.5.0 (2023-10-08)
-
-### feat: Implement Experiences Section
-
-- Add `experiences` data file
-- Add `Experiences` typings file
-- Add an API route to fetch the `experiences` data
-- Add experience pictures in `public` folder
-- Add `WorkExperience` component
-- Add `ExperienceCard` component
-- Add `Skill` component
-- Add `TooltipSkill` component
+- Add `skills` data file
+- Add `SkillsInterface` typings file
+- Add an API route to fetch the `skills` data
+- Add `Skills` component
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.5.1 (2023-10-08)
+
+  ### fix: Update experiences data
+
+  - Update experiences data json file
+
+  ## 0.5.0 (2023-10-08)
+
+  ### feat: Implement Experiences Section
+
+  - Add `experiences` data file
+  - Add `Experiences` typings file
+  - Add an API route to fetch the `experiences` data
+  - Add experience pictures in `public` folder
+  - Add `WorkExperience` component
+  - Add `ExperienceCard` component
+  - Add `Skill` component
+  - Add `TooltipSkill` component
 
   ## 0.4.0 (2023-10-08)
 

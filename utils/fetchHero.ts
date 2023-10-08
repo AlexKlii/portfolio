@@ -1,4 +1,4 @@
-import { HeroInterface } from '@/typings/Hero'
+import { HeroInterface } from '@/typings/HeroInterface'
 
 export const fetchHero = async (): Promise<HeroInterface> => {
     const res = await fetch(`${process.env.BASE_URL}/api/hero`)
