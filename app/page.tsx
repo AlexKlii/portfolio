@@ -22,12 +22,13 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import ContactMe from '@/components/ContactMe'
 import Footer from '@/components/Footer'
- 
+import Providers from './providers'
+
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'My protfolio',
-  viewport: 'width=device-width, initial-scale=1',
-  icons: '/favicon.ico'
+    title: 'Portfolio',
+    description: 'My protfolio',
+    viewport: 'width=device-width, initial-scale=1',
+    icons: '/favicon.ico'
 }
 
 export const dynamic = 'force-dynamic'
@@ -42,40 +43,42 @@ const Home = async () => {
     const contact: Contact = await fetchContact()
 
     return (
-        <div className='bg-[rgb(33,33,33)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
-            <main>
-                <Header socialLinks={socialLinks} />
+        <Providers>
+            <div className='dark:bg-gray-dark bg-gray-light text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-400/20 scrollbar-track-gray scrollbar-thumb-green'>
+                <main>
+                    <Header socialLinks={socialLinks} />
 
-                <section id='hero' className='snap-start'>
-                    <Hero words={hero.typeWriterWords} src={hero.src} />
-                </section>
+                    <section id='hero' className='snap-start'>
+                        <Hero words={hero.typeWriterWords} src={hero.src} />
+                    </section>
 
-                <section id='about' className='snap-center'>
-                    <About about={about.about} src={about.src} />
-                </section>
+                    <section id='about' className='snap-center'>
+                        <About about={about.about} src={about.src} />
+                    </section>
 
-                <section id='experiences' className='snap-center'>
-                    <WorkExperience experiences={experiences} />
-                </section>
+                    <section id='experiences' className='snap-center'>
+                        <WorkExperience experiences={experiences} />
+                    </section>
 
-                <section id='skills' className='snap-center'>
-                    <Skills skills={skills} />
-                </section>
+                    <section id='skills' className='snap-center'>
+                        <Skills skills={skills} />
+                    </section>
 
-                <section id='projects' className='snap-center'>
-                    <Projects projects={projects} />
-                </section>
+                    <section id='projects' className='snap-center'>
+                        <Projects projects={projects} />
+                    </section>
 
-                <section id='contact' className='snap-center'>
-                    <ContactMe contact={contact} />
-                </section>
+                    <section id='contact' className='snap-center'>
+                        <ContactMe contact={contact} />
+                    </section>
 
-                {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
-                <section className='snap-end h-44 sm:hidden'></section>
+                    {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
+                    <section className='snap-end h-44 sm:hidden'></section>
 
-                <Footer src={hero.src}></Footer>
-            </main>
-        </div>
+                    <Footer src={hero.src}></Footer>
+                </main>
+            </div>
+        </Providers>
     )
 }
 

@@ -1,17 +1,26 @@
 # Changelog
 
-## 0.10.0 (2023-10-09)
+## 0.11.0 (2023-10-09)
 
-### fix: Fix Responsive Design
+### feat: Implement DarkModeButton component
 
-- Update image style from `About` component for small devices
-- Update style from `ExperienceCard` component for all devices
-- Update style from `WorkExperience` component for all devices
-- Change image for 'E-commerce' experience
+- Update `tailwind.config.ts` file with custom color
+- Refactor all occurrences with the new color value from `tailwind.config.ts`
+- Implement `DarkModeButton` component
+- Update style for the light mode
 
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.10.0 (2023-10-09)
+
+  ### fix: Fix Responsive Design
+
+  - Update image style from `About` component for small devices
+  - Update style from `ExperienceCard` component for all devices
+  - Update style from `WorkExperience` component for all devices
+  - Change image for 'E-commerce' experience
+    
   ## 0.9.0 (2023-10-08)
 
   ### feat: Implement Footer Component

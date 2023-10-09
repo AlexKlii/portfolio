@@ -22,7 +22,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
   }
 
   const size: number = 32
-  const color: string = '#139902'
+  const color: string = 'green'
 
   return (
     <motion.div
@@ -37,11 +37,11 @@ export default function ContactMe({ contact }: { contact: Contact }) {
       transition={{ duration: 1 }}
       className='flex flex-col relative h-screen text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-2xl'>Contact me</h3>
+      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white  text-2xl'>Contact me</h3>
 
       <div className='absolute top-36 sm:top-1/4 flex flex-col space-y-10'>
         <h4 className='text-lg sm:text-4xl font-semibold text-center'>
-          I have got just what you need. <span className='underline decoration-[#139902]'>Let&apos;s talk</span>
+          I have got just what you need. <span className='underline decoration-green'>Let&apos;s talk</span>
         </h4>
 
         <div className='space-y-4 sm:space-y-6'>
@@ -69,7 +69,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
             <input {...register('subject')} required placeholder='Subject' className='contactInput w-10/12 sm:w-11/12 mx-auto' type='text' name='subject' id='subject' />
 
             <textarea {...register('message')} required placeholder='My message...' className='contactInput w-10/12 sm:w-11/12 mx-auto' name='message' id='message'></textarea>
-            <button type='submit' className='bg-[#139902] py-5 px-10 rounded-md text-black font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
+            <button type='submit' className='bg-green py-5 px-10 rounded-md text-black font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
           </form>
         </div>
       </div>

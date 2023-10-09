@@ -20,11 +20,11 @@ export default function WorkExperience({ experiences }: { experiences: Experienc
         transition={{duration: 1}}
         className='flex flex-col relative h-screen text-left overflow-hidden md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'
     >
-        <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white text-2xl'>
             Experiences
         </h3>
 
-        <div className='absolute top-36 w-full flex max-xl:space-x-5 overflow-x-auto px-5 pt-10 pb-2 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
+        <div className='absolute top-36 w-full flex max-xl:space-x-5 overflow-x-auto px-5 pt-10 pb-2 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-green'>
             {  
                 experiences?.filter(e => e.isActive)
                     .sort((a, b) => a.dateStart < b.dateStart ? 1 : -1)
