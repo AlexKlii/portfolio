@@ -21,7 +21,7 @@ export default function AboutComponent({ about, src }: { about: string, src: str
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
 
         <Image
-                className='-mb-20 absolute hidden sm:block top-52 xl:top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover sm:w-60 sm:h-60 xl:w-72 xl:h-72'
+                className='-mb-20 absolute hidden sm:block top-40 xl:top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover sm:w-52 sm:h-52 xl:w-72 xl:h-72'
                 loader={() => src}
                 src={src}
                 alt='About section photo'
