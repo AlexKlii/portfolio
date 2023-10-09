@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.11.1 (2023-10-09)
+
+### fix: Update ExperienceCard component style
+
+- Update `ExperienceCard` style
+- Update `BackgroundCircles` component with the new `green` custom color
+- Update `Hero` component with the new `green` custom color
+
 ## 0.11.0 (2023-10-09)
 
 ### feat: Implement DarkModeButton component
