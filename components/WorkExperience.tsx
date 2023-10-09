@@ -24,7 +24,7 @@ export default function WorkExperience({ experiences }: { experiences: Experienc
             Experiences
         </h3>
 
-        <div className='absolute top-36 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
+        <div className='absolute top-36 w-full flex max-xl:space-x-5 overflow-x-auto px-5 pt-10 pb-2 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#139902]'>
             {  
                 experiences?.filter(e => e.isActive)
                     .sort((a, b) => a.dateStart < b.dateStart ? 1 : -1)

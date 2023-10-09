@@ -1,13 +1,22 @@
 # Changelog
 
-## 0.9.0 (2023-10-08)
+## 0.10.0 (2023-10-09)
 
-### feat: Implement Footer Component
+### fix: Fix Responsive Design
 
-- Implement `Footer` Component
+- Update image style from `About` component for small devices
+- Update style from `ExperienceCard` component for all devices
+- Update style from `WorkExperience` component for all devices
+- Change image for 'E-commerce' experience
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.9.0 (2023-10-08)
+
+  ### feat: Implement Footer Component
+
+  - Implement `Footer` Component
 
   ## 0.8.0 (2023-10-08)
 
