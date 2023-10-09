@@ -17,8 +17,8 @@ const GetSkillElement = (id: number, skill: string, color?: string, hovered?: bo
     const onMouseEnter = (id: number) => setIsHovered(id)
     const onMouseLeave = () => setIsHovered(0)
 
-    const baseColor: string = theme === 'dark' ? 'green-skills' : 'grey'
-    const hoverBaseColor: string = theme === 'dark' ? 'green' : 'white'
+    const baseColor: string = theme === 'dark' ? '#13990233' : '#137f0566'
+    const hoverBaseColor: string = 'green'
     const baseSize: number = 32
 
     let skillColor = baseColor
@@ -80,7 +80,7 @@ export default function Skill({ id, skill, color, hovered, hoverColor, size, pro
         return GetSkillElement(id, skill, color, hovered, hoverColor, size, className)
     } else {
         return (
-            <div className='rounded-full border dark:border-green-dark border-gray-light/95 text-green-skills dark:hover:border-green hover:border-gray-light/40 px-5 py-5 md:px-6 md:py-6 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32'>
+            <div className='rounded-full border dark:border-green-dark border-green/20 text-green-skills dark:hover:border-green hover:border-green/60 px-5 py-5 md:px-6 md:py-6 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32'>
                 { GetSkillElement(id, skill, color, hovered, hoverColor, size, className, proficiency) }
             </div>
         )

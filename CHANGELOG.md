@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.11.2 (2023-10-09)
+
+### fix: Fix Skills component css
+
+- Fix `Skills` component style on Dark Mode 
+  
 ## 0.11.1 (2023-10-09)
 
 ### fix: Update ExperienceCard component style
