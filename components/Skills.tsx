@@ -19,11 +19,11 @@ export default function Skills({skills}: { skills: SkillInterface[] }) {
         transition={{duration: 1}}
         className='flex relative flex-col text-center md:text-left xl:flex-row max-w-full xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'
     >
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-500 text-white  text-2xl'>
             Skills
         </h3>
 
-        <h4 className='absolute top-36 uppercase tracking-[4.2px] text-gray-500 text-sm'>Hover over a skill for currency proficiency</h4>
+        <h4 className='absolute top-36 uppercase tracking-[4.2px] dark:text-gray-500 text-white  text-sm'>Hover over a skill for currency proficiency</h4>
 
         <div className='grid grid-cols-3 gap-10 absolute top-56'>
             {
