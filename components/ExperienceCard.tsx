@@ -13,7 +13,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
     src: string
 }) {
   return (
-    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-green/25 p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
+    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-slate-300/60 p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
          <Image
                 className='hidden md:block rounded-full w-[33%] h-auto object-cover object-center'
                 loader={() => src}
