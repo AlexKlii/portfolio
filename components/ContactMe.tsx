@@ -37,11 +37,11 @@ export default function ContactMe({ contact }: { contact: Contact }) {
       transition={{ duration: 1 }}
       className='flex flex-col relative h-screen text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white text-2xl'>Contact me</h3>
+      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white text-2xl pl-10'>Contact me</h3>
 
       <div className='absolute top-36 sm:top-1/4 flex flex-col space-y-10'>
         <h4 className='text-lg sm:text-4xl font-semibold text-center'>
-          I have got just what you need. <span className='underline decoration-green'>Let&apos;s talk</span>
+          I have got just what you need. <span className='underline dark:decoration-green decoration-yellow text-yellow-4'>Let&apos;s talk</span>
         </h4>
 
         <div className='space-y-4 sm:space-y-6 md:flex md:flex-row-reverse md:items-center'>

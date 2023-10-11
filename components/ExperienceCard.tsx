@@ -13,7 +13,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
     src: string
 }) {
   return (
-    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-green-dark/20 p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
+    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-green-dark/20 p-10 pb-5 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
          <Image
                 className='hidden md:block rounded-full w-[33%] h-auto object-cover object-center'
                 loader={() => src}
@@ -36,8 +36,8 @@ export default function ExperienceCard({ title, localization, langages, dateStar
             viewport={{once: true}}
             className='px-0 md:px-10'
         >
-            <h4 className='text-2xl md:text-4xl font-light'>{title}</h4>
-            <p className='font-bold text-xl md:text-2xl mt-1'>{localization}</p>
+            <h4 className='text-xl md:text-2xl xl:text-4xl font-light'>{title}</h4>
+            <p className='font-bold text-lg md:text-xl xl:text-2xl mt-1'>{localization}</p>
             <div className='flex item-center mx-auto text-center space-x-2 my-2'>
                 {langages?.map((langage, index) => <Skill id={index} skill={langage} key={index} className='w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7'/>)}
             </div>
