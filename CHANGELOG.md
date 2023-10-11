@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.11.3 (2023-10-11)
+
+### fix: Fix LightMode color scheme
+
+- Update color scheme for LightMode in all components 
+
 ## 0.11.2 (2023-10-09)
 
 ### fix: Fix Skills component css

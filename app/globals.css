@@ -4,10 +4,10 @@
 
 @layer components {
   .heroButton {
-      @apply bg-gray-light dark:bg-gray-dark px-4 sm:px-6 mr-1 mt-2 sm:mt-0 py-2 border-gray-light dark:border-gray-dark rounded-full uppercase text-xs tracking-widest dark:text-gray-500 text-white transition-all hover:border-green/40 hover:text-green border-2 
+      @apply bg-gray-light hover:bg-green-dark/5 dark:bg-gray-dark px-4 sm:px-6 mr-1 mt-2 sm:mt-0 py-2 border-gray-light dark:border-gray-dark rounded-full uppercase text-xs tracking-widest dark:text-gray-500 text-white transition-all hover:border-green/40 dark:hover:text-green hover:text-green border-2 
   }
   
   .contactInput {
-      @apply outline-none dark:bg-slate-400/10 bg-slate-300/50 rounded-md border-b px-6 py-4 border-gray-dark dark:text-gray-500 text-white dark:placeholder-gray-500 placeholder-white transition-all focus:border-green focus:text-green hover:border-green
+      @apply outline-none dark:bg-slate-400/10 bg-green-dark/30 rounded-md border-b px-6 py-4 dark:border-gray-dark border-green-dark dark:text-gray-500 text-white dark:placeholder-gray-500 placeholder-white transition-all focus:border-green dark:focus:text-green focus:text-gray-dark hover:border-green
   }
 }
