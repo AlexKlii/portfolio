@@ -1,36 +1,42 @@
 # Changelog
 
-## 0.11.3 (2023-10-11)
+## 0.12.0 (2023-10-11)
 
-### fix: Fix LightMode color scheme
+### feat: Add Data for the About Section
 
-- Update color scheme for LightMode in all components 
-
-## 0.11.2 (2023-10-09)
-
-### fix: Fix Skills component css
-
-- Fix `Skills` component style on Dark Mode 
-  
-## 0.11.1 (2023-10-09)
-
-### fix: Update ExperienceCard component style
-
-- Update `ExperienceCard` style
-- Update `BackgroundCircles` component with the new `green` custom color
-- Update `Hero` component with the new `green` custom color
-
-## 0.11.0 (2023-10-09)
-
-### feat: Implement DarkModeButton component
-
-- Update `tailwind.config.ts` file with custom color
-- Refactor all occurrences with the new color value from `tailwind.config.ts`
-- Implement `DarkModeButton` component
-- Update style for the light mode
+- Update `About` data to remove `Lorem ipsum` 
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.11.3 (2023-10-11)
+
+  ### fix: Fix LightMode color scheme
+
+  - Update color scheme for LightMode in all components 
+
+  ## 0.11.2 (2023-10-09)
+
+  ### fix: Fix Skills component css
+
+  - Fix `Skills` component style on Dark Mode 
+    
+  ## 0.11.1 (2023-10-09)
+
+  ### fix: Update ExperienceCard component style
+
+  - Update `ExperienceCard` style
+  - Update `BackgroundCircles` component with the new `green` custom color
+  - Update `Hero` component with the new `green` custom color
+
+  ## 0.11.0 (2023-10-09)
+
+  ### feat: Implement DarkModeButton component
+
+  - Update `tailwind.config.ts` file with custom color
+  - Refactor all occurrences with the new color value from `tailwind.config.ts`
+  - Implement `DarkModeButton` component
+  - Update style for the light mode
 
   ## 0.10.0 (2023-10-09)
 
