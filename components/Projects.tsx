@@ -47,7 +47,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 )}
             </div>
 
-            <div className='w-full absolute top-[30%] dark:bg-green-dark/10 bg-white/40 left-0 h-2/4 -skew-y-12'></div>
+            <div className='w-full absolute top-[30%] dark:bg-green-dark/10 bg-green/30 left-0 h-2/4 -skew-y-12'></div>
         </motion.div>
     )
 }
