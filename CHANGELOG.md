@@ -1,13 +1,21 @@
 # Changelog
 
-## 0.12.0 (2023-10-11)
+## 0.13.0 (2023-10-11)
 
-### feat: Add Data for the About Section
+### feat: Implement Scroll Buttons on Projects Component
 
-- Update `About` data to remove `Lorem ipsum` 
+- Implement Right & Left scroll buttons on `Projects` Component to navigate between them
+- Update style to fix responsive design on small devices
+- Update color scheme for LightMode 
 
 <details>
   <summary>See old changelog</summary>
+
+  ## 0.12.0 (2023-10-11)
+
+  ### feat: Add Data for the About Section
+
+  - Update `About` data to remove `Lorem ipsum` 
 
   ## 0.11.3 (2023-10-11)
 
