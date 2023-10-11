@@ -25,6 +25,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
 
     useEffect(() => {
         setColor(switchColor)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme])
 
     return (
@@ -42,11 +43,11 @@ export default function Projects({ projects }: { projects: Project[] }) {
         >
             <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-500 text-white text-2xl pl-10'>Projects</h3>
 
-            <div className='relative top-20 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-green' id='container'>
+            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-green' id='container'>
                 {filteredProject.map((project, index) =>
                     <div key={project.id} id={project.id.toString()} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 xl:p-44 h-screen'>
                         <Image
-                            className='top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover w-36 h-36 md:w-60 md:h-60 xl:w-72 xl:h-72'
+                            className='hidden md:block top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover w-36 h-36 md:w-60 md:h-60 xl:w-72 xl:h-72'
                             loader={() => project.src}
                             src={project.src}
                             alt={project.title}
@@ -55,11 +56,9 @@ export default function Projects({ projects }: { projects: Project[] }) {
                         />
 
                         <div className='flex justify-around'>
-                            {1 !== project.id &&
-                                <button onClick={() => handleProject((project.id - 1).toString())} className='pr-10'>
-                                    <FaChevronCircleLeft color={color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
-                                </button>
-                            }
+                            <button onClick={() => handleProject((project.id - 1).toString())} disabled={1 === project.id} className='pr-10'>
+                                <FaChevronCircleLeft color={1 === project.id ? 'gray' : color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
+                            </button>
 
                             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                                 <h4 className='text-xl md:text-2xl xl:text-4xl font-semibold text-center'>
@@ -71,12 +70,9 @@ export default function Projects({ projects }: { projects: Project[] }) {
                                 <p className='text-sm text-left md:text-center'>{project.detail}</p>
                             </div>
 
-
-                            {projects.length !== project.id &&
-                                <button onClick={() => handleProject((project.id + 1).toString())} className='pl-10'>
-                                    <FaChevronCircleRight color={color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
-                                </button>
-                            }
+                            <button onClick={() => handleProject((project.id + 1).toString())} disabled={projects.length === project.id} className='pl-10'>
+                                <FaChevronCircleRight color={projects.length === project.id ? 'gray' : color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
+                            </button>
                         </div>
                     </div>
                 )}

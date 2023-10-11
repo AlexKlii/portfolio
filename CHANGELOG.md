@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.13.1 (2023-10-11)
+
+### fix: Fix style on Projects Component
+
+- Fix Scroll Buttons style on `Projects` Component
+- Hide projects image on small devices
+
 ## 0.13.0 (2023-10-11)
 
 ### feat: Implement Scroll Buttons on Projects Component
