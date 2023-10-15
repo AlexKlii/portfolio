@@ -41,7 +41,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
             <div className='flex item-center mx-auto text-center space-x-2 my-2'>
                 {langages?.map((langage, index) => <Skill id={index} skill={langage} key={index} className='w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7'/>)}
             </div>
-            <p className='uppercase py-2 md:py-5 dark:text-gray-300 text-gray-dark/80'>{dateStart} - {dateStop}</p>
+            <p className='uppercase py-2 md:py-5 dark:text-gray-300 text-gray-100'>{dateStart} - {dateStop}</p>
             <div className='overflow-auto max-h-64 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
                     {details?.map((detail, i) =>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.3 (2023-10-15)
+
+### fix: Fix ExperienceCard css
+
+- Fix `ExperienceCard` css on LightMode
+
 ## 0.13.2 (2023-10-15)
 
 ### fix: Some minor fixes
