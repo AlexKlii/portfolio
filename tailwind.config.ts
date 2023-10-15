@@ -10,13 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'green': '#139902',
+        'green': '#72FF72',
         'gray-dark': '#242424',
-        'gray-light': '#6CAB63B7',
-        'green-dark': '#14990227',
+        'gray-light': '#384F2E',
+        'green-dark': '#2C5C21',
         'green-skills': '#137f0566',
         'yellow-light': '#F0C905',
-        'yellow': '#EAB308',
+        'yellow': '#C8A23B',
         'yellow-dark': '#CA8B04BD'
       }
     },

@@ -14,6 +14,7 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
     const onMouseEnter = (id: number) => setIsHovered(id)
     const onMouseLeave = () => setIsHovered(0)
     const EMAIL_ID: number = 420
+    const green: string = '#72FF72'
 
     return (
         <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-4'>
@@ -35,7 +36,7 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
                     <SocialIcon
                         key={socialLink.id}
                         url={socialLink.url}
-                        fgColor={isHoveringId === socialLink.id ? 'green' : theme === 'dark' ? 'gray' : 'white'}
+                        fgColor={isHoveringId === socialLink.id ? green : theme === 'dark' ? 'gray' : 'white'}
                         onMouseEnter={() => onMouseEnter(socialLink.id)}
                         onMouseLeave={() => onMouseLeave()}
                         bgColor='transparent'
@@ -62,7 +63,7 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
                         network='email'
                         url='#contact'
                         bgColor='transparent'
-                        fgColor={isHoveringId === EMAIL_ID ? 'green' : theme === 'dark' ? 'gray' : 'white'}
+                        fgColor={isHoveringId === EMAIL_ID ? green : theme === 'dark' ? 'gray' : 'white'}
                     />
                     <Link href='#contact'>
                         <p className='uppercase hidden md:inline-flex text-sm'>

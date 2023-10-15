@@ -44,7 +44,7 @@ const Home = async () => {
 
     return (
         <Providers>
-            <div className='dark:bg-gray-dark bg-gray-light dark:text-white text-gray-dark/95 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-400/20 scrollbar-track-gray scrollbar-thumb-green'>
+            <div className='dark:bg-gray-dark bg-gray-light text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <main>
                     <Header socialLinks={socialLinks} />
 

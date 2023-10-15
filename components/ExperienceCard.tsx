@@ -13,7 +13,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
     src: string
 }) {
   return (
-    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-green-dark/20 p-10 pb-5 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
+    <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-[#424242] bg-[#246418] p-10 pb-5 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
          <Image
                 className='hidden md:block rounded-full w-[33%] h-auto object-cover object-center'
                 loader={() => src}
@@ -42,7 +42,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
                 {langages?.map((langage, index) => <Skill id={index} skill={langage} key={index} className='w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7'/>)}
             </div>
             <p className='uppercase py-2 md:py-5 dark:text-gray-300 text-gray-dark/80'>{dateStart} - {dateStop}</p>
-            <div className='overflow-auto max-h-64 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-green'>
+            <div className='overflow-auto max-h-64 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
                     {details?.map((detail, i) =>
                         <li key={i}>{detail}</li>

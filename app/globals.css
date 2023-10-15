@@ -8,6 +8,6 @@
   }
   
   .contactInput {
-      @apply outline-none dark:bg-slate-400/10 bg-green-dark/30 rounded-md border-b px-6 py-4 dark:border-gray-dark border-green-dark dark:text-gray-500 text-white dark:placeholder-gray-500 placeholder-white transition-all focus:border-green dark:focus:text-green focus:text-gray-dark hover:border-green
+      @apply outline-none dark:bg-slate-400/10 bg-green-dark rounded-md border-b px-6 py-4 dark:border-gray-dark border-green-dark dark:text-gray-500 text-white dark:placeholder-gray-500 placeholder-white transition-all focus:border-green dark:focus:text-green focus:text-gray-dark hover:border-green
   }
 }
