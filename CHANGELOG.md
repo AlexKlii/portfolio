@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.13.2 (2023-10-15)
+
+### fix: Some minor fixes
+
+- Fix color scheme on LightMode
+- Fix responsive design on `Projects` section
+- Update `README.md` file
+
 ## 0.13.1 (2023-10-11)
 
 ### fix: Fix style on Projects Component

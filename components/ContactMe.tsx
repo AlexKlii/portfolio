@@ -22,7 +22,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
   }
 
   const size: number = 32
-  const color: string = 'green'
+  const color: string = '#72FF72'
 
   return (
     <motion.div
@@ -45,21 +45,21 @@ export default function ContactMe({ contact }: { contact: Contact }) {
         </h4>
 
         <div className='space-y-4 sm:space-y-6 md:flex md:flex-row-reverse md:items-center'>
-          <div className='md:flex md:flex-col md:px-10 max-md:w-2/3 max-md:mx-auto md:pl-[1%] pl-[14%] justify-center'>
+          <div className='md:flex md:flex-col md:px-10 max-md:w-2/3 max-md:mx-auto md:pl-[1%] pl-3 sm:pl-[14%] justify-center'>
             <div className='flex items-center space-x-2 justify-start'>
               <IoIosPhonePortrait color={color} className='w-7 h-7 sm:w-9 sm:h-9' size={size} />
-              <p className='text-md sm:text-xl'>{contact?.phone}</p>
+              <p className='text-sm sm:text-xl'>{contact?.phone}</p>
             </div>
 
             <div className='flex items-center space-x-2 justify-start'>
               <MdMail color={color} size={size} className='w-7 h-7 sm:w-9 sm:h-9' />
               
-              <p className='text-md sm:text-xl'>{contact?.mail}</p>
+              <p className='text-sm sm:text-xl'>{contact?.mail}</p>
             </div>
 
             <div className='flex items-center space-x-2 justify-start pb-10 sm:pb-0'>
               <FaMapMarkerAlt color={color} size={size} className='w-7 h-7 sm:w-9 sm:h-9' />
-              <p className='text-md sm:text-xl'>{contact?.address}</p>
+              <p className='text-sm sm:text-xl'>{contact?.address}</p>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
             <input {...register('subject')} required placeholder='Subject' className='contactInput w-10/12 sm:w-11/12 mx-auto' type='text' name='subject' id='subject' />
 
             <textarea {...register('message')} required placeholder='My message...' className='contactInput w-10/12 sm:w-11/12 mx-auto' name='message' id='message'></textarea>
-            <button type='submit' className='bg-green py-5 px-10 rounded-md dark:text-black text-white font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
+            <button type='submit' className='bg-[#0F7A02] py-5 px-10 rounded-md dark:text-black text-white font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
           </form>
         </div>
       </div>
