@@ -4,4 +4,10 @@ export type Project = {
     src: string
     detail: string
     isActive: boolean
+    ressources: Array<Ressource>
+}
+
+export type Ressource = {
+    id: string
+    url: string
 }

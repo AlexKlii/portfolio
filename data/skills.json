@@ -65,16 +65,16 @@
     {
         "id": 10,
         "title": "Solidity",
-        "proficiency": 60,
+        "proficiency": 80,
         "code": "solidity",
         "isActive": true
     },
     {
         "id": 11,
         "title": "Rust",
-        "proficiency": 60,
+        "proficiency": 40,
         "code": "rust",
-        "isActive": false
+        "isActive": true
     },
     {
         "id": 12,

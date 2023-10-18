@@ -1,12 +1,14 @@
 'use client'
 
-import { Project } from '@/typings/Project'
+import { Project, Ressource } from '@/typings/Project'
 import { motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 import { useTheme } from 'next-themes'
 import ChevronButton from './ChevronButton'
+import { SocialIcon } from 'react-social-icons'
+import { TbWorld } from 'react-icons/tb'
+import Link from 'next/link'
 
 export default function Projects({ projects }: { projects: Project[] }) {
     const { theme } = useTheme()
@@ -14,9 +16,14 @@ export default function Projects({ projects }: { projects: Project[] }) {
     const switchColor = () => 'dark' === theme ? 'green' : 'yellow'
     const [color, setColor] = useState(switchColor)
 
+    const [isHoveringId, setIsHovered] = useState('')
+    const onMouseEnter = (id: string) => setIsHovered(id)
+    const onMouseLeave = () => setIsHovered('')
+    const green: string = '#72FF72'
+
     const filteredProject = projects?.filter(project => project.isActive).sort((a, b) => a.id < b.id ? -1 : 1)
 
-    const handleProject = (direction: 'left'|'right' = 'left') => {
+    const handleProject = (direction: 'left' | 'right' = 'left') => {
         const container = document.getElementById('container');
         if (container) {
             const scrollValue = (container.scrollWidth - container.clientWidth) / filteredProject.length;
@@ -50,7 +57,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 {filteredProject.map((project, index) =>
                     <div key={project.id} id={project.id.toString()} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 sm:p-20 xl:p-44 h-screen'>
                         <Image
-                            className='hidden md:block top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover w-36 h-36 md:w-60 md:h-60 xl:w-72 xl:h-72'
+                            className='hidden md:block top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover w-36 h-36 md:w-52 md:h-52 xl:w-60 xl:h-60'
                             loader={() => project.src}
                             src={project.src}
                             alt={project.title}
@@ -72,7 +79,31 @@ export default function Projects({ projects }: { projects: Project[] }) {
                                     </span> {project.title}
                                 </h4>
 
-                                <p className='text-sm text-left md:text-center scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green overflow-y-scroll max-h-72 md:max-h-full sm:overflow-auto'>{project.detail}</p>
+                                <div className='text-center'>
+                                    <p className='text-sm text-left md:text-center scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green overflow-y-scroll max-h-72 md:max-h-full sm:overflow-auto pb-2' dangerouslySetInnerHTML={{ __html: project.detail }} />
+
+                                    Let&apos;s see:
+                                    {project.ressources.map((ressource: Ressource) =>
+                                        ressource.id === 'github' ?
+                                            <SocialIcon
+                                                key={ressource.id}
+                                                url={ressource.url}
+                                                fgColor={isHoveringId === ressource.id ? green : theme === 'dark' ? 'gray' : 'white'}
+                                                onMouseEnter={() => onMouseEnter(ressource.id)}
+                                                onMouseLeave={() => onMouseLeave()}
+                                                bgColor='transparent'
+                                            />
+                                            : <Link key={ressource.id}
+                                                href={ressource.url}
+                                                onMouseEnter={() => onMouseEnter(ressource.id)}
+                                                onMouseLeave={() => onMouseLeave()}
+                                                className={isHoveringId === ressource.id ? 'text-green' : 'dark:text-gray-light text-white'}
+
+                                            >
+                                                <TbWorld className='inline-flex text-3xl justify-center'></TbWorld>
+                                            </Link>
+                                    )}
+                                </div>
                             </div>
 
                             <ChevronButton

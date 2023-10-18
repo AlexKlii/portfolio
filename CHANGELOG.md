@@ -1,51 +1,66 @@
 # Changelog
 
-## 0.13.4 (2023-10-18)
+## 1.0.1 (2023-10-18)
 
-### fix: Some minor fixes
+### fix: Remove unused field to Project typings
 
-- Update `globals.css` file to fix `heroButton` and `contactInput` style
-- Refactor `gray-light` custom color from `tailwind.config.ts` file into `green-light`
-- Add new custom colors to `tailwind.config.ts`: `gray-light` and `gray-card`
-- Fix `About` component on small devices
-- Implement `ChevronButton` component
-- Update `DarkModeButton` style
-- Update `ExperienceCard` image size
-- Fix color to `Header` component link
-- Fix double scrollbar from `Projects` component
+- Remove `github` and `website` unused field to `Project` typings
+  
+## 1.0.0 (2023-10-18)
 
-## 0.13.3 (2023-10-15)
+### feat: Implement real data
 
-### fix: Fix ExperienceCard css
-
-- Fix `ExperienceCard` css on LightMode
-
-## 0.13.2 (2023-10-15)
-
-### fix: Some minor fixes
-
-- Fix color scheme on LightMode
-- Fix responsive design on `Projects` section
-- Update `README.md` file
-
-## 0.13.1 (2023-10-11)
-
-### fix: Fix style on Projects Component
-
-- Fix Scroll Buttons style on `Projects` Component
-- Hide projects image on small devices
-
-## 0.13.0 (2023-10-11)
-
-### feat: Implement Scroll Buttons on Projects Component
-
-- Implement Right & Left scroll buttons on `Projects` Component to navigate between them
-- Update style to fix responsive design on small devices
-- Update color scheme for LightMode 
-
+- Remove typewritter title from `HeroComponent`
+- Update `ProjectsComponent` to implement project ressources
+- Replace fake data by real ones 
+- Update some css styles
+  
 <details>
   <summary>See old changelog</summary>
 
+  ## 0.13.4 (2023-10-18)
+
+  ### fix: Some minor fixes
+
+  - Update `globals.css` file to fix `heroButton` and `contactInput` style
+  - Refactor `gray-light` custom color from `tailwind.config.ts` file into `green-light`
+  - Add new custom colors to `tailwind.config.ts`: `gray-light` and `gray-card`
+  - Fix `About` component on small devices
+  - Implement `ChevronButton` component
+  - Update `DarkModeButton` style
+  - Update `ExperienceCard` image size
+  - Fix color to `Header` component link
+  - Fix double scrollbar from `Projects` component
+
+  ## 0.13.3 (2023-10-15)
+
+  ### fix: Fix ExperienceCard css
+
+  - Fix `ExperienceCard` css on LightMode
+
+  ## 0.13.2 (2023-10-15)
+
+  ### fix: Some minor fixes
+
+  - Fix color scheme on LightMode
+  - Fix responsive design on `Projects` section
+  - Update `README.md` file
+
+  ## 0.13.1 (2023-10-11)
+
+  ### fix: Fix style on Projects Component
+
+  - Fix Scroll Buttons style on `Projects` Component
+  - Hide projects image on small devices
+
+  ## 0.13.0 (2023-10-11)
+
+  ### feat: Implement Scroll Buttons on Projects Component
+
+  - Implement Right & Left scroll buttons on `Projects` Component to navigate between them
+  - Update style to fix responsive design on small devices
+  - Update color scheme for LightMode 
+  
   ## 0.12.0 (2023-10-11)
 
   ### feat: Add Data for the About Section

@@ -16,7 +16,8 @@ const config: Config = {
         'gray-dark': '#242424',
         'green-light': '#6D7E66',
         'green-dark': '#2C5C21',
-        'green-skills': '#137f0566',
+        'green-skills': '#137F0566',
+        'green-button': '#0F7A02', 
         'yellow-light': '#F0C905',
         'yellow': '#C8A23B',
         'yellow-dark': '#CA8B04BD'
