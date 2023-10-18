@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.13.4 (2023-10-18)
+
+### fix: Some minor fixes
+
+- Update `globals.css` file to fix `heroButton` and `contactInput` style
+- Refactor `gray-light` custom color from `tailwind.config.ts` file into `green-light`
+- Add new custom colors to `tailwind.config.ts`: `gray-light` and `gray-card`
+- Fix `About` component on small devices
+- Implement `ChevronButton` component
+- Update `DarkModeButton` style
+- Update `ExperienceCard` image size
+- Fix color to `Header` component link
+- Fix double scrollbar from `Projects` component
+
 ## 0.13.3 (2023-10-15)
 
 ### fix: Fix ExperienceCard css

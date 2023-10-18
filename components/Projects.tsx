@@ -6,21 +6,24 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 import { useTheme } from 'next-themes'
+import ChevronButton from './ChevronButton'
 
 export default function Projects({ projects }: { projects: Project[] }) {
     const { theme } = useTheme()
-    const switchColor = () => 'dark' === theme ? 'green' : 'yellow'
 
+    const switchColor = () => 'dark' === theme ? 'green' : 'yellow'
     const [color, setColor] = useState(switchColor)
-    const size: number = 32
-    
+
     const filteredProject = projects?.filter(project => project.isActive).sort((a, b) => a.id < b.id ? -1 : 1)
 
-    const handleProject = (targetId: string) => {
-        const projectElement = document.getElementById(targetId)
-        projectElement?.scrollIntoView({
-            behavior: 'smooth'
-        })
+    const handleProject = (direction: 'left'|'right' = 'left') => {
+        const container = document.getElementById('container');
+        if (container) {
+            const scrollValue = (container.scrollWidth - container.clientWidth) / filteredProject.length;
+            direction === 'left'
+                ? container.scrollLeft -= scrollValue
+                : container.scrollLeft += scrollValue
+        }
     }
 
     useEffect(() => {
@@ -39,7 +42,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 opacity: 1
             }}
             transition={{ duration: 1 }}
-            className='flex flex-col relative h-screen text-left md:flex-row max-w-full justify-evenly mx-auto items-center overflow-scroll sm:overflow-hidden z-0 scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green'
+            className='flex flex-col relative h-screen text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'
         >
             <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-500 text-white text-2xl pl-10'>Projects</h3>
 
@@ -56,9 +59,11 @@ export default function Projects({ projects }: { projects: Project[] }) {
                         />
 
                         <div className='flex justify-around'>
-                            <button onClick={() => handleProject((project.id - 1).toString())} disabled={1 === project.id} className='pr-3 sm:pr-10'>
-                                <FaChevronCircleLeft color={1 === project.id ? 'gray' : color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
-                            </button>
+                            <ChevronButton
+                                disabled={1 === project.id}
+                                color={1 === project.id ? 'gray' : color}
+                                onClick={() => handleProject()}
+                            ></ChevronButton>
 
                             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                                 <h4 className='text-xl md:text-2xl xl:text-4xl font-semibold text-center'>
@@ -70,9 +75,12 @@ export default function Projects({ projects }: { projects: Project[] }) {
                                 <p className='text-sm text-left md:text-center scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green overflow-y-scroll max-h-72 md:max-h-full sm:overflow-auto'>{project.detail}</p>
                             </div>
 
-                            <button onClick={() => handleProject((project.id + 1).toString())} disabled={projects.length === project.id} className='pl-3 sm:pl-10'>
-                                <FaChevronCircleRight color={projects.length === project.id ? 'gray' : color} size={size} className='w-14 h-14 max-sm:w-9 max-sm:h-9' />
-                            </button>
+                            <ChevronButton
+                                direction='right'
+                                disabled={projects.length === project.id}
+                                color={projects.length === project.id ? 'gray' : color}
+                                onClick={() => handleProject('right')}
+                            ></ChevronButton>
                         </div>
                     </div>
                 )}
