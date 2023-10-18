@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 (2023-10-18)
+
+### fix: Remove unused field to Project typings
+
+- Remove `github` and `website` unused field to `Project` typings
+  
 ## 1.0.0 (2023-10-18)
 
 ### feat: Implement real data

@@ -4,12 +4,10 @@ export type Project = {
     src: string
     detail: string
     isActive: boolean
-    github: string
-    website: string
     ressources: Array<Ressource>
 }
 
 export type Ressource = {
-    id: 'github'|'website'
+    id: string
     url: string
 }
