@@ -80,7 +80,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                                 </h4>
 
                                 <div className='text-center'>
-                                    <p className='text-sm text-left md:text-center scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green overflow-y-scroll max-h-72 md:max-h-full sm:overflow-auto pb-2' dangerouslySetInnerHTML={{ __html: project.detail }} />
+                                    <p className='text-sm text-left md:text-center scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green overflow-y-auto max-h-72 md:max-h-full sm:overflow-auto pb-2' dangerouslySetInnerHTML={{ __html: project.detail }} />
 
                                     Let&apos;s see:
                                     {project.ressources.map((ressource: Ressource) =>

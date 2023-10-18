@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 (2023-10-18)
+
+### fix: Minor fixes
+
+- Update `AboutComponent` and `ProjectsComponent` styles
+  
 ## 1.0.1 (2023-10-18)
 
 ### fix: Remove unused field to Project typings
