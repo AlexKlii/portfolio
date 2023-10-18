@@ -37,7 +37,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
       transition={{ duration: 1 }}
       className='flex flex-col relative h-screen text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white text-2xl pl-10'>Contact me</h3>
+      <h3 className='absolute top-24 uppercase tracking-[10px] sm:tracking-[20px] dark:text-gray-500 text-white text-2xl pl-5'>Contact me</h3>
 
       <div className='absolute top-36 sm:top-1/4 flex flex-col space-y-10'>
         <h4 className='text-lg sm:text-4xl font-semibold text-center'>
@@ -72,7 +72,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
             <input {...register('subject')} required placeholder='Subject' className='contactInput w-10/12 sm:w-11/12 mx-auto' type='text' name='subject' id='subject' />
 
             <textarea {...register('message')} required placeholder='My message...' className='contactInput w-10/12 sm:w-11/12 mx-auto' name='message' id='message'></textarea>
-            <button type='submit' className='bg-[#0F7A02] py-5 px-10 rounded-md dark:text-black text-white font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
+            <button type='submit' className='bg-green-button py-5 px-10 rounded-md text-white font-bold text-lg animate-pulse hover:animate-none w-10/12 sm:w-11/12 mx-auto'>Submit</button>
           </form>
         </div>
       </div>

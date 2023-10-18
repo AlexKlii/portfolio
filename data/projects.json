@@ -1,23 +1,35 @@
 [
     {
         "id": 1,
-        "title": "TuneTogether",
-        "src": "imgs/projects/tunetogether.png",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "isActive": true
-    },
-    {
-        "id": 2,
         "title": "PonyRacer Ninja Squad",
         "src": "imgs/projects/ninja-squad.png",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "isActive": true
+        "detail": "Explore Angular development with Ninja Squad's PonyRacer project. This comprehensive learning resource takes you step-by-step through building a feature-rich application, covering components, services, routing, dependency injection, modules, HTTP, WebSockets, lazy loading, authentication, and much more.",
+        "isActive": true,
+        "ressources" : [
+            {"id": "github", "url": "https://github.com/AlexKlii/ponyracer"},
+            {"id": "website", "url": "https://ponyracer-angular.vercel.app"}
+        ]
     },
     {
         "id": 3,
         "title": "Portfolio",
         "src": "imgs/projects/portfolio.png",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "isActive": true
+        "detail": "A sleek and responsive portfolio built with Next.js (this one !), showcasing my projects, skills, and experiences. </br> Feel free to explore, contribute, or reach out with any inquiries !",
+        "isActive": true,
+        "ressources" : [
+            {"id": "github", "url": "https://github.com/AlexKlii/portfolio"},
+            {"id": "website", "url": "https://alexandre-caliaro.vercel.app"}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "TuneTogether",
+        "src": "imgs/projects/tunetogether.png",
+        "detail": "Wanna rock the music world like a superstar without breaking the bank? Tune Together is your backstage pass to create, connect, and celebrate music in a whole new way! </br> Crowfunding DApp built with Next.js and Solidity. Developed as part of the Alyra blockchain training program.",
+        "isActive": true,
+        "ressources" : [
+            {"id": "github", "url": "https://github.com/AlexKlii/tune-together"},
+            {"id": "website", "url": "https://tune-together.vercel.app"}
+        ]
     }
 ]

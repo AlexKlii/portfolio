@@ -19,7 +19,7 @@ export default function Skills({skills}: { skills: SkillInterface[] }) {
         transition={{duration: 1}}
         className='flex relative flex-col text-center md:text-left xl:flex-row max-w-full xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'
     >
-        <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-500 text-white text-2xl pl-10'>
+        <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-500 text-white text-2xl pl-5'>
             Skills
         </h3>
 
