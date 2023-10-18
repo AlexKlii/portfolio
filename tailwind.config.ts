@@ -11,8 +11,10 @@ const config: Config = {
     extend: {
       colors: {
         'green': '#72FF72',
+        'gray-light': '#808080',
+        'gray-card': '#424242',
         'gray-dark': '#242424',
-        'gray-light': '#384F2E',
+        'green-light': '#6D7E66',
         'green-dark': '#2C5C21',
         'green-skills': '#137f0566',
         'yellow-light': '#F0C905',

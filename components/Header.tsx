@@ -67,7 +67,7 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
                     />
                     <Link href='#contact'>
                         <p className='uppercase hidden md:inline-flex text-sm'>
-                            <span className={isHoveringId === EMAIL_ID ? 'text-green' : 'dark:text-gray-400 text-white'}>
+                            <span className={isHoveringId === EMAIL_ID ? 'text-green' : 'dark:text-gray-light text-white'}>
                                 Contact me
                             </span>
                         </p>
