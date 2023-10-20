@@ -1,7 +1,7 @@
 import { AboutInterface } from '@/typings/AboutInterface'
 
 export const fetchAbout = async (): Promise<AboutInterface> => {
-    const res = await fetch(`${process.env.BASE_URL}/api/about`)
+    const res = await fetch(`/api/about`)
     if (!res.ok) {
         throw new Error('Failed to fetch data')
     }

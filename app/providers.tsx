@@ -8,7 +8,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     React.useEffect(() => setMounted(true), [])
 
     return (
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme='dark'>
             {mounted && children}
         </ThemeProvider>
     )

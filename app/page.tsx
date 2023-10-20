@@ -1,81 +1,87 @@
+'use client'
+
 import { fetchSocialLinks } from '@/utils/fetchSocialLinks'
 import { SocialLink } from '@/typings/SocialLink'
-import { Metadata } from 'next'
 import { HeroInterface } from '@/typings/HeroInterface'
 import { fetchHero } from '@/utils/fetchHero'
-import { AboutInterface } from '@/typings/AboutInterface'
-import { fetchAbout } from '@/utils/fetchAbout'
-import { Experience } from '@/typings/Experience'
-import { fetchExperiences } from '@/utils/fetchExperiences'
-import { SkillInterface } from '@/typings/SkillInterface'
-import { fetchSkills } from '@/utils/fetchSkills'
-import { Project } from '@/typings/Project'
-import { fetchProjects } from '@/utils/fetchProjects'
-import { Contact } from '@/typings/Contact'
-import { fetchContact } from '@/utils/fetchContact'
+import { useEffect, useState } from 'react'
 
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import About from '@/components/About'
-import WorkExperience from '@/components/WorkExperience'
-import Skills from '@/components/Skills'
-import Projects from '@/components/Projects'
-import ContactMe from '@/components/ContactMe'
 import Footer from '@/components/Footer'
 import Providers from './providers'
 
-export const metadata: Metadata = {
-    title: 'Portfolio',
-    description: 'My protfolio',
-    viewport: 'width=device-width, initial-scale=1',
-    icons: '/favicon.ico'
-}
+import dynamic from 'next/dynamic'
+const About = dynamic(() => import('@/components/About'), {ssr: false})
+const WorkExperience = dynamic(() => import('@/components/WorkExperience'), {ssr: false})
+const Skills = dynamic(() => import('@/components/Skills'), {ssr: false})
+const Projects = dynamic(() => import('@/components/Projects'), {ssr: false})
+const ContactMe = dynamic(() => import('@/components/ContactMe'), {ssr: false})
 
-export const dynamic = 'force-dynamic'
+// export const metadata: Metadata = {
+//     title: 'Portfolio',
+//     description: 'My protfolio',
+//     viewport: 'width=device-width, initial-scale=1',
+//     icons: '/favicon.ico'
+// }
 
-const Home = async () => {
-    const socialLinks: SocialLink[] = await fetchSocialLinks()
-    const hero: HeroInterface = await fetchHero()
-    const about: AboutInterface = await fetchAbout()
-    const experiences: Experience[] = await fetchExperiences()
-    const skills: SkillInterface[] = await fetchSkills()
-    const projects: Project[] = await fetchProjects()
-    const contact: Contact = await fetchContact()
+// export const dynamic = 'force-dynamic'
 
-    return (
+const Home = () => {
+    const [socialLinks, setSocialLinks] = useState<SocialLink[]>([])
+    const [isLoadingSocialLinks, setLoadingSocialLinks] = useState(true)
+
+    const [hero, setHero] = useState<HeroInterface>()
+    const [isLoadingHero, setLoadingHero] = useState(true)
+
+    useEffect(() => {
+        fetchSocialLinks()
+            .then((socialLinks: SocialLink[]) => {
+                setSocialLinks(socialLinks)
+                setLoadingSocialLinks(false)
+            })
+
+        fetchHero()
+            .then((hero: HeroInterface) => {
+                setHero(hero)
+                setLoadingHero(false)
+            })
+    }, [])
+
+    return (!isLoadingSocialLinks && !isLoadingHero &&
         <Providers>
             <div className='dark:bg-gray-dark bg-green-light text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <main>
                     <Header socialLinks={socialLinks} />
 
                     <section id='hero' className='snap-start'>
-                        <Hero words={hero.typeWriterWords} src={hero.src} />
+                        <Hero words={hero!.typeWriterWords} src={hero!.src} />
                     </section>
 
                     <section id='about' className='snap-center'>
-                        <About about={about.about} src={about.src} />
+                        <About />
                     </section>
 
                     <section id='experiences' className='snap-center'>
-                        <WorkExperience experiences={experiences} />
+                        <WorkExperience />
                     </section>
 
                     <section id='skills' className='snap-center'>
-                        <Skills skills={skills} />
+                        <Skills />
                     </section>
 
                     <section id='projects' className='snap-center'>
-                        <Projects projects={projects} />
+                        <Projects />
                     </section>
 
                     <section id='contact' className='snap-center'>
-                        <ContactMe contact={contact} />
+                        <ContactMe />
                     </section>
 
                     {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
                     <section className='snap-end h-44 sm:hidden'></section>
 
-                    <Footer src={hero.src}></Footer>
+                    <Footer src={hero!.src}></Footer>
                 </main>
             </div>
         </Providers>

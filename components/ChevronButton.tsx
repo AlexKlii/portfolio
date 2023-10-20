@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 
 const ChevronButton = ({ disabled, color, onClick, direction = 'left', size = 32 }: { disabled: boolean, color: string, onClick: () => void, direction?: 'right' | 'left', size?: number }) => {

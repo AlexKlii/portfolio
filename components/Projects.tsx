@@ -9,8 +9,12 @@ import ChevronButton from './ChevronButton'
 import { SocialIcon } from 'react-social-icons'
 import { TbWorld } from 'react-icons/tb'
 import Link from 'next/link'
+import { fetchProjects } from '@/utils/fetchProjects'
 
-export default function Projects({ projects }: { projects: Project[] }) {
+export default function Projects() {
+    const [projects, setProjects] = useState<Project[]>([])
+    const [isLoading, setLoading] = useState(true)
+
     const { theme } = useTheme()
 
     const switchColor = () => 'dark' === theme ? 'green' : 'yellow'
@@ -38,7 +42,15 @@ export default function Projects({ projects }: { projects: Project[] }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme])
 
-    return (
+    useEffect(() => {
+        fetchProjects()
+            .then((projects: Project[]) => {
+                setProjects(projects)
+                setLoading(false)
+            })
+    }, [])
+
+    return (!isLoading &&
         <motion.div
             initial={{
                 x: -42,
