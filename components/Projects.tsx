@@ -70,7 +70,6 @@ export default function Projects() {
                     <div key={project.id} id={project.id.toString()} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 sm:p-20 xl:p-44 h-screen'>
                         <Image
                             className='hidden md:block top-1/4 md:mb-0 flex-shrink-0 rounded-full object-cover w-36 h-36 md:w-52 md:h-52 xl:w-60 xl:h-60'
-                            loader={() => project.src}
                             src={project.src}
                             alt={project.title}
                             width={420}

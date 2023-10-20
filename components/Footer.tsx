@@ -11,7 +11,6 @@ export default function Footer({ src }: { src: string }) {
             <Link href="#hero" className='z-0 w-10'>
               <Image
                   className='rounded-full h-10 w-10 filter grayscale hover:grayscale-0'
-                  loader={() => src}
                   src={src}
                   alt="Photo de profil"
                   width={420}
