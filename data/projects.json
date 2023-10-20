@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "PonyRacer Ninja Squad",
-        "src": "imgs/projects/ninja-squad.png",
+        "src": "/imgs/projects/ninja-squad.png",
         "detail": "Explore Angular development with Ninja Squad's PonyRacer project. This comprehensive learning resource takes you step-by-step through building a feature-rich application, covering components, services, routing, dependency injection, modules, HTTP, WebSockets, lazy loading, authentication, and much more.",
         "isActive": true,
         "ressources" : [
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "title": "Portfolio",
-        "src": "imgs/projects/portfolio.png",
+        "src": "/imgs/projects/portfolio.png",
         "detail": "A sleek and responsive portfolio built with Next.js (this one !), showcasing my projects, skills, and experiences. </br> Feel free to explore, contribute, or reach out with any inquiries !",
         "isActive": true,
         "ressources" : [
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "title": "TuneTogether",
-        "src": "imgs/projects/tunetogether.png",
+        "src": "/imgs/projects/tunetogether.png",
         "detail": "Wanna rock the music world like a superstar without breaking the bank? Tune Together is your backstage pass to create, connect, and celebrate music in a whole new way! </br> Crowfunding DApp built with Next.js and Solidity. Developed as part of the Alyra blockchain training program.",
         "isActive": true,
         "ressources" : [

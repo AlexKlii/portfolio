@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Frontend Developer",
-        "src": "imgs/experiences/axiocode.jpg",
+        "src": "/imgs/experiences/axiocode.jpg",
         "localization": "Axiocode",
         "langages": [
             "angular",
@@ -23,7 +23,7 @@
     {
         "id": 2,
         "title": "E-commerce",
-        "src": "imgs/experiences/ecommerce.png",
+        "src": "/imgs/experiences/ecommerce.png",
         "localization": "Self-Employed Business",
         "langages": [
             "shopify",
@@ -42,7 +42,7 @@
     {
         "id": 3,
         "title": "Blockchain Developer",
-        "src": "imgs/experiences/alyra.svg",
+        "src": "/imgs/experiences/alyra.svg",
         "localization": "Alyra School",
         "langages": [
             "react",

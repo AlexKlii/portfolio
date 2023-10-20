@@ -1,48 +1,56 @@
 # Changelog
 
-## 1.1.2 (2023-10-20)
+## 1.2.0 (2023-10-20)
 
-### fix: Remove snap style
+### feat: LazyLoading Components on scroll + Optimizing images
 
-- Remove `snap` style
-
-## 1.1.1 (2023-10-20)
-
-### fix: Fix About image style
-
-- Fix About image style on large devices
-
-## 1.1.0 (2023-10-20)
-
-### feat: Implement LazyLoading
-
-- Update fetch methods to remove `process.env.BASE_URL`
-- Implement dynamic component loading
-- Implement LazyLoading
-
-## 1.0.2 (2023-10-18)
-
-### fix: Minor fixes
-
-- Update `AboutComponent` and `ProjectsComponent` styles
-  
-## 1.0.1 (2023-10-18)
-
-### fix: Remove unused field to Project typings
-
-- Remove `github` and `website` unused field to `Project` typings
-  
-## 1.0.0 (2023-10-18)
-
-### feat: Implement real data
-
-- Remove typewritter title from `HeroComponent`
-- Update `ProjectsComponent` to implement project ressources
-- Replace fake data by real ones 
-- Update some css styles
+- Add `useIntersectionObserver` and `withLazyLoad` functions
+- Update images with compressed and resized images
+- Implement LazyLoading components on scroll
   
 <details>
   <summary>See old changelog</summary>
+
+  ## 1.1.2 (2023-10-20)
+
+  ### fix: Remove snap style
+
+  - Remove `snap` style
+
+  ## 1.1.1 (2023-10-20)
+
+  ### fix: Fix About image style
+
+  - Fix About image style on large devices
+
+  ## 1.1.0 (2023-10-20)
+
+  ### feat: Implement LazyLoading
+
+  - Update fetch methods to remove `process.env.BASE_URL`
+  - Implement dynamic component loading
+  - Implement LazyLoading
+
+  ## 1.0.2 (2023-10-18)
+
+  ### fix: Minor fixes
+
+  - Update `AboutComponent` and `ProjectsComponent` styles
+    
+  ## 1.0.1 (2023-10-18)
+
+  ### fix: Remove unused field to Project typings
+
+  - Remove `github` and `website` unused field to `Project` typings
+    
+  ## 1.0.0 (2023-10-18)
+
+  ### feat: Implement real data
+
+  - Remove typewritter title from `HeroComponent`
+  - Update `ProjectsComponent` to implement project ressources
+  - Replace fake data by real ones 
+  - Update some css styles
 
   ## 0.13.4 (2023-10-18)
 

@@ -4,7 +4,7 @@
 
 @layer components {
   .heroButton {
-      @apply bg-green-light hover:bg-green-dark/5 dark:bg-gray-dark px-4 sm:px-6 mr-1 mt-2 sm:mt-0 py-2 rounded-full uppercase text-xs tracking-widest dark:text-gray-500 text-white transition-all dark:hover:text-green hover:text-green 
+      @apply bg-transparent px-4 sm:px-6 mr-1 mt-2 sm:mt-0 py-2 rounded-full uppercase text-xs tracking-widest dark:text-gray-500 text-white transition-all dark:hover:text-green hover:text-green 
   }
   
   .contactInput {

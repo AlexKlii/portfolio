@@ -16,7 +16,6 @@ export default function ExperienceCard({ title, localization, langages, dateStar
     <article className='flex flex-col rounded-xl items-center md:space-y-7 flex-shrink-0 w-full md:w-1/2 xl:w-[32%] snap-center dark:bg-gray-card bg-green-dark py-10 px-5 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden mx-auto'>
          <Image
                 className='hidden md:block rounded-full w-1/4 h-auto object-cover object-center'
-                loader={() => src}
                 src={src}
                 alt={title}
                 width={420}

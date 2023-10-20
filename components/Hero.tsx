@@ -9,11 +9,10 @@ export default function HeroComponent({ words, src }: { words: string[], src: st
     // const [ text ] = useTypewriter({ words, loop: true, delaySpeed: 420 })
 
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+        <div className='h-screen flex flex-col space-y-3 items-center justify-center text-center overflow-hidden'>
             <BackgroundCirecles />
             <Image
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
-                loader={() => src}
                 src={src}
                 alt='Profile Picture'
                 width={420}
