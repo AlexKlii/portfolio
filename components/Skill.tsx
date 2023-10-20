@@ -17,8 +17,8 @@ const GetSkillElement = (id: number, skill: string, color?: string, hovered?: bo
     const onMouseEnter = (id: number) => setIsHovered(id)
     const onMouseLeave = () => setIsHovered(0)
 
-    const baseColor: string = theme === 'dark' ? '#13990233' : '#C8A23B'
-    const hoverBaseColor: string = theme === 'dark' ? 'green' : 'yellow'
+    const baseColor: string = theme !== 'dark' ? '#C8A23B' : '#13990233'
+    const hoverBaseColor: string = theme !== 'dark' ? 'yellow' : 'green'
     const baseSize: number = 32
 
     let skillColor = baseColor

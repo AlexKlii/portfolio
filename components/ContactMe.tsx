@@ -1,12 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoIosPhonePortrait } from 'react-icons/io'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { MdMail } from 'react-icons/md'
 import { Contact } from '@/typings/Contact'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { fetchContact } from '@/utils/fetchContact'
 
 type Inputs = {
   name: string
@@ -15,16 +16,28 @@ type Inputs = {
   message: string
 }
 
-export default function ContactMe({ contact }: { contact: Contact }) {
-  const { register, handleSubmit, formState: { errors } } = useForm<Inputs>()
+export default function ContactMe() {
+  const { register, handleSubmit } = useForm<Inputs>()
+
   const onSubmit: SubmitHandler<Inputs> = formData => {
-    window.location.href = `mailto:${contact.mail}?subject=${formData.subject}&body=Name%3A%20${formData.name}%0D%0A%0D%0AEmail%3A%20${formData.email}%0D%0A%0D%0AMessage%3A%0D%0A${formData.message.replace(/(?:\r\n|\r|\n)/g, '%0D%0A%0D%0A')}%0D%0A`
+    window.location.href = `mailto:${contact?.mail}?subject=${formData.subject}&body=Name%3A%20${formData.name}%0D%0A%0D%0AEmail%3A%20${formData.email}%0D%0A%0D%0AMessage%3A%0D%0A${formData.message.replace(/(?:\r\n|\r|\n)/g, '%0D%0A%0D%0A')}%0D%0A`
   }
 
   const size: number = 32
   const color: string = '#72FF72'
 
-  return (
+  const [contact, setContact] = useState<Contact>()
+  const [isLoading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchContact()
+      .then((contact: Contact) => {
+        setContact(contact)
+        setLoading(false)
+      })
+  }, [])
+
+  return (!isLoading &&
     <motion.div
       initial={{
         x: -42,
@@ -53,7 +66,7 @@ export default function ContactMe({ contact }: { contact: Contact }) {
 
             <div className='flex items-center space-x-2 justify-start'>
               <MdMail color={color} size={size} className='w-7 h-7 sm:w-9 sm:h-9' />
-              
+
               <p className='text-sm sm:text-xl'>{contact?.mail}</p>
             </div>
 

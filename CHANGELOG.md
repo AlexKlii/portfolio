@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 (2023-10-20)
+
+### feat: Implement LazyLoading
+
+- Update fetch methods to remove `process.env.BASE_URL`
+- Implement dynamic component loading
+- Implement LazyLoading
+
 ## 1.0.2 (2023-10-18)
 
 ### fix: Minor fixes

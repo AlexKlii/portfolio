@@ -1,7 +1,7 @@
 import { Project } from '@/typings/Project'
 
 export const fetchProjects = async (): Promise<Project[]> => {
-    const res = await fetch(`${process.env.BASE_URL}/api/projects`)
+    const res = await fetch(`/api/projects`)
     if (!res.ok) {
         throw new Error('Failed to fetch data')
     }
