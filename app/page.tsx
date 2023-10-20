@@ -50,7 +50,7 @@ const Home = () => {
 
     return (!isLoadingSocialLinks && !isLoadingHero &&
         <Providers>
-            <div className='dark:bg-gray-dark bg-green-light text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
+            <div className='dark:bg-gray-dark bg-green-light text-white h-screen snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <main>
                     <Header socialLinks={socialLinks} />
 
@@ -58,23 +58,23 @@ const Home = () => {
                         <Hero words={hero!.typeWriterWords} src={hero!.src} />
                     </section>
 
-                    <section id='about' className='snap-center'>
+                    <section id='about'>
                         <About />
                     </section>
 
-                    <section id='experiences' className='snap-center'>
+                    <section id='experiences'>
                         <WorkExperience />
                     </section>
 
-                    <section id='skills' className='snap-center'>
+                    <section id='skills'>
                         <Skills />
                     </section>
 
-                    <section id='projects' className='snap-center'>
+                    <section id='projects'>
                         <Projects />
                     </section>
 
-                    <section id='contact' className='snap-center'>
+                    <section id='contact'>
                         <ContactMe />
                     </section>
 

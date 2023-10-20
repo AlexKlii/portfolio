@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 (2023-10-20)
+
+### fix: Remove snap style
+
+- Remove `snap` style
+
 ## 1.1.1 (2023-10-20)
 
 ### fix: Fix About image style
