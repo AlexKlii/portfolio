@@ -42,9 +42,9 @@ export default function AboutComponent() {
                 height={420}
             />
 
-            <div className='space-y-10 px-0 md:px-10 xl:pt-10 absolute top-40 sm:top-1/2 text-center'>
+            <div className='space-y-10 px-0 md:px-10 absolute top-40 sm:top-2/4 xl:top-1/2 text-center'>
                 <h4 className='text-4xl font-semibold'>Here is a <span className='underline dark:decoration-green decoration-yellow'>little</span> background</h4>
-                <p className='text-sm text-left sm:text-center px-4 max-h-full' dangerouslySetInnerHTML={{ __html: aboutData.about }} />
+                <p className='text-sm xl:text-lg text-left sm:text-center px-4 max-h-full font-semibold' dangerouslySetInnerHTML={{ __html: aboutData.about }} />
             </div>
         </motion.div>
     )

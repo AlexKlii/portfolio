@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 (2023-10-20)
+
+### fix: Fix About image style
+
+- Fix About image style on large devices
+
 ## 1.1.0 (2023-10-20)
 
 ### feat: Implement LazyLoading
