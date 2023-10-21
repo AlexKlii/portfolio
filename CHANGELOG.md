@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 (2023-10-21)
+
+### fix: Fix style on small devices
+
+- Update `Skills` and `SkillDetails` components to fix style on small devices
+
 ## 1.3.0 (2023-10-21)
 
 ### feat: Implement SkillDetails Component
