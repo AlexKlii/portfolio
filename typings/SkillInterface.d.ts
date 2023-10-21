@@ -4,4 +4,5 @@ export type SkillInterface = {
     proficiency: number
     code: string
     isActive: boolean
+    details: string
 }

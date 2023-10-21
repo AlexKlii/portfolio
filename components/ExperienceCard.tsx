@@ -38,7 +38,7 @@ export default function ExperienceCard({ title, localization, langages, dateStar
             <h4 className='text-xl md:text-2xl xl:text-4xl font-light'>{title}</h4>
             <p className='font-bold text-lg md:text-xl xl:text-2xl mt-1'>{localization}</p>
             <div className='flex item-center mx-auto text-center space-x-2 my-2'>
-                {langages?.map((langage, index) => <Skill id={index} skill={langage} key={index} className='w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7'/>)}
+                {langages?.map((langage, index) => <Skill id={index} skill={langage} key={index} className='w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7' skillClicked={() => {}}/>)}
             </div>
             <p className='uppercase py-2 md:py-5 dark:text-gray-300 text-gray-100'>{dateStart} - {dateStop}</p>
             <div className='overflow-auto max-h-64 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
