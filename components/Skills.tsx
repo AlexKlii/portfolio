@@ -54,8 +54,8 @@ export default function Skills() {
 
             <h4 className='absolute top-36 uppercase tracking-[4.2px] dark:text-gray-500 text-white text-sm'>Hover over a skill for currency proficiency</h4>
 
-            <div className='absolute'>
-                <div className='top-56 grid grid-cols-3 gap-10' style={!skillDetail ? mountedStyle : unmountedStyle}>
+            <div className='absolute top-56'>
+                <div className='grid grid-cols-3 gap-10' style={!skillDetail ? mountedStyle : unmountedStyle}>
                     {!skillDetail && skills?.filter(skill => skill.isActive)
                         .sort((a, b) => a.proficiency > b.proficiency ? -1 : 1)
                         .map(skill =>
