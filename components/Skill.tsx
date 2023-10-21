@@ -66,9 +66,10 @@ const GetSkillElement = (id: number, skill: string, color?: string, hovered?: bo
     }
 }
 
-export default function Skill({ id, skill, color, hovered, hoverColor, size, proficiency, className }: {
+export default function Skill({ id, skill, skillClicked, color, hovered, hoverColor, size, proficiency, className }: {
     id: number
     skill: string
+    skillClicked: (id: number) => void
     color?: string
     hovered?: boolean
     hoverColor?: string
@@ -76,13 +77,15 @@ export default function Skill({ id, skill, color, hovered, hoverColor, size, pro
     size?: number
     proficiency?: number
 }) {
+    const handleClick = () => skillClicked(id)
+
     if (!proficiency) {
         return GetSkillElement(id, skill, color, hovered, hoverColor, size, className)
     } else {
         return (
-            <div className='rounded-full border dark:border-green-dark border-yellow-dark/50 text-green-skills dark:hover:border-green hover:border-yellow-light px-5 py-5 md:px-6 md:py-6 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32'>
-                { GetSkillElement(id, skill, color, hovered, hoverColor, size, className, proficiency) }
-            </div>
+            <span className='rounded-full border dark:border-green-dark border-yellow-dark/50 text-green-skills dark:hover:border-green hover:border-yellow-light px-5 py-5 md:px-6 md:py-6 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32' onClick={handleClick}>
+                {GetSkillElement(id, skill, color, hovered, hoverColor, size, className, proficiency)}
+            </span>
         )
     }
 }

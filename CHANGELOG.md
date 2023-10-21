@@ -1,16 +1,27 @@
 # Changelog
 
-## 1.2.0 (2023-10-20)
+## 1.3.0 (2023-10-21)
 
-### feat: LazyLoading Components on scroll + Optimizing images
+### feat: Implement SkillDetails Component
 
-- Add `useIntersectionObserver` and `withLazyLoad` functions
-- Update images with compressed and resized images
-- Implement LazyLoading components on scroll
+- Add `skillClicked` output event to `Skill` component
+- Implement `SkillDetails` component
+- Update `Skills` component to display `SkillDetails` on click on a `Skill`
+- Update `SkillInterface` with a new field: `details`
+- Update `skills` data
+- Add `sharp` npm package
   
 <details>
   <summary>See old changelog</summary>
 
+  ## 1.2.0 (2023-10-20)
+
+  ### feat: LazyLoading Components on scroll + Optimizing images
+
+  - Add `useIntersectionObserver` and `withLazyLoad` functions
+  - Update images with compressed and resized images
+  - Implement LazyLoading components on scroll
+  
   ## 1.1.2 (2023-10-20)
 
   ### fix: Remove snap style

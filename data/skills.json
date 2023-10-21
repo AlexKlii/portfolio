@@ -4,83 +4,95 @@
         "title": "Angular",
         "proficiency": 90,
         "code": "angular",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 2,
         "title": "Typescript",
         "proficiency": 95,
         "code": "typescript",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 3,
         "title": "Next.js",
         "proficiency": 80,
         "code": "nextjs",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 4,
         "title": "Anchor",
         "proficiency": 42,
         "code": "anchor",
-        "isActive": false
+        "isActive": false,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 5,
         "title": "English",
         "proficiency": 75,
         "code": "translate",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 6,
         "title": "Symfony",
         "proficiency": 65,
         "code": "symfony",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 7,
         "title": "SQL Server",
         "proficiency": 60,
         "code": "sql",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 8,
         "title": "Shopify",
         "proficiency": 50,
         "code": "shopify",
-        "isActive": false
+        "isActive": false,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 9,
         "title": "Facebook Ads",
         "proficiency": 50,
         "code": "fb",
-        "isActive": false
+        "isActive": false,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 10,
         "title": "Solidity",
         "proficiency": 80,
         "code": "solidity",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 11,
         "title": "Rust",
         "proficiency": 40,
         "code": "rust",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     },
     {
         "id": 12,
         "title": "React.js",
         "proficiency": 85,
         "code": "React",
-        "isActive": true
+        "isActive": true,
+        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
     }
 ]
