@@ -14,7 +14,7 @@ export default function SkillDetails({ skill, closeDetail }: { skill: SkillInter
                 skillClicked={closeDetail}
             />
 
-            <p className='mt-5 sm:mt-10 w-full sm:w-2/3 mx-auto text-center overflow-auto max-h-40 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green' dangerouslySetInnerHTML={{ __html: skill.details }} />
+            <p className='mt-5 px-2 sm:mt-10 w-full sm:w-2/3 mx-auto text-center overflow-auto max-h-40 md:max-h-40 sm:max-h-full scrollbar-thin scrollbar-track-gray-dark/95 scrollbar-thumb-green' dangerouslySetInnerHTML={{ __html: skill.details }} />
 
             <button onClick={closeDetail} className='p-3 mt-5 sm:mt-14 text-lg sm:text-3xl text-white dark:text-gray-dark bg-yellow-dark dark:bg-green-dark opacity-40 hover:opacity-100 rounded-full'>
                 <RiArrowGoBackLine />
