@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2 (2023-10-22)
+
+### fix: Update skills data
+
 ## 1.3.1 (2023-10-21)
 
 ### fix: Fix style on small devices

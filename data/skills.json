@@ -2,31 +2,31 @@
     {
         "id": 1,
         "title": "Angular",
-        "proficiency": 90,
+        "proficiency": 80,
         "code": "angular",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Passionate about Angular development, I've mastered the art of crafting seamless web experiences. 🚀 </br></br> From training with the PonyRacer project by Ninja Squad to contributing to applications for the Federation Equestre Internationale (FEI) at Axiocode, my journey reflects a wealth of hands-on expertise."
     },
     {
         "id": 2,
         "title": "Typescript",
-        "proficiency": 95,
+        "proficiency": 90,
         "code": "typescript",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "A maestro in Typescript, I bring clarity and structure to codebases. 🧑‍💻  </br></br> Whether enhancing readability for Axiocode or contributing to TuneTogether's crowdfunded DApp as part of Alyra School, my focus is on creating robust and maintainable solutions."
     },
     {
         "id": 3,
         "title": "Next.js",
-        "proficiency": 80,
+        "proficiency": 75,
         "code": "nextjs",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Mastering Next.js, I've crafted a responsive portfolio that showcases my diverse projects and experiences. 🌐 </br></br> From enhancing Axiocode's Angular application to creating React.js/Next.js websites, my expertise extends across the spectrum of web development."
     },
     {
         "id": 4,
         "title": "Anchor",
-        "proficiency": 42,
+        "proficiency": 0,
         "code": "anchor",
         "isActive": false,
         "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
@@ -34,65 +34,65 @@
     {
         "id": 5,
         "title": "English",
-        "proficiency": 75,
+        "proficiency": 70,
         "code": "translate",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Fluent in both French and English, my linguistic versatility has been a valuable asset. 🌐 </br></br> Whether gathering customer needs at Axiocode, participating in blockchain discussions on Discord, or during travels, my proficiency in English extends beyond professional contexts. It enriches experiences, bridging realms beyond the scope of web development."
     },
     {
         "id": 6,
         "title": "Symfony",
-        "proficiency": 65,
+        "proficiency": 60,
         "code": "symfony",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Adept in Symfony, I seamlessly integrate it into Angular applications at Axiocode. 🛠️ </br></br> My experience extends to API development and SQL Server database management, ensuring cohesive and efficient systems."
     },
     {
         "id": 7,
         "title": "SQL Server",
-        "proficiency": 60,
+        "proficiency": 40,
         "code": "sql",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Proficient in SQL Server, I apply my skills to manage databases for various projects. 🗃️ </br></br> From Axiocode's SQL Server database to the broader scope of web applications, database efficiency remains a constant priority."
     },
     {
         "id": 8,
         "title": "Shopify",
-        "proficiency": 50,
+        "proficiency": 42,
         "code": "shopify",
         "isActive": false,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Venturing into the world of e-commerce, I created, launched, and maintained a Shopify website. 🛒 </br></br> Managing Facebook ads and handling online sales of various products were integral aspects of this entrepreneurial endeavor."
     },
     {
         "id": 9,
         "title": "Facebook Ads",
-        "proficiency": 50,
+        "proficiency": 42,
         "code": "fb",
         "isActive": false,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Navigating the realm of digital marketing, I managed Facebook ads to enhance online visibility and drive engagement. 📈 </br></br> This experience, combined with my broader skill set, contributes to a holistic approach in web development."
     },
     {
         "id": 10,
         "title": "Solidity",
-        "proficiency": 80,
+        "proficiency": 50,
         "code": "solidity",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Delving into blockchain technology, I've ventured into Solidity with a focus on crafting smart contracts. ⛓️ </br></br> Contributions to TuneTogether's crowdfunded DApp as part of the Alyra blockchain training program showcase my dedication to decentralized applications."
     },
     {
         "id": 11,
         "title": "Rust",
-        "proficiency": 40,
+        "proficiency": 15,
         "code": "rust",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "Embarking on the journey with Rust, I embrace the challenges of a language with a steep learning curve. ⚙️ </br></br> While I'm in the early stages of proficiency, my enthusiasm and dedication to growth drive me forward in this exciting exploration."
     },
     {
         "id": 12,
         "title": "React.js",
-        "proficiency": 85,
+        "proficiency": 40,
         "code": "React",
         "isActive": true,
-        "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae ducimus, et reiciendis architecto veniam quidem. Voluptate corporis vero, saepe quos commodi autem cupiditate dolorem modi accusantium nihil quisquam voluptatum."
+        "details": "A key contributor to creating, launching, and maintaining dynamic web applications using React.js. 🚀 </br></br> From Alyra's projects to my personal portfolio, I showcase the breadth of my contributions to the ever-evolving landscape of web development."
     }
 ]
