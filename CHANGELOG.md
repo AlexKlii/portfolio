@@ -1,29 +1,36 @@
 # Changelog
 
-## 1.3.2 (2023-10-22)
+## 1.4.0 (2023-10-23)
 
-### fix: Update skills data
+### feat: Implement download CV
 
-## 1.3.1 (2023-10-21)
-
-### fix: Fix style on small devices
-
-- Update `Skills` and `SkillDetails` components to fix style on small devices
-
-## 1.3.0 (2023-10-21)
-
-### feat: Implement SkillDetails Component
-
-- Add `skillClicked` output event to `Skill` component
-- Implement `SkillDetails` component
-- Update `Skills` component to display `SkillDetails` on click on a `Skill`
-- Update `SkillInterface` with a new field: `details`
-- Update `skills` data
-- Add `sharp` npm package
-  
+- Implement download CV button on `Header` component
+- Update `Links` to `target: _blank`
+   
 <details>
   <summary>See old changelog</summary>
 
+  ## 1.3.2 (2023-10-22)
+
+  ### fix: Update skills data
+
+  ## 1.3.1 (2023-10-21)
+
+  ### fix: Fix style on small devices
+
+  - Update `Skills` and `SkillDetails` components to fix style on small devices
+
+  ## 1.3.0 (2023-10-21)
+
+  ### feat: Implement SkillDetails Component
+
+  - Add `skillClicked` output event to `Skill` component
+  - Implement `SkillDetails` component
+  - Update `Skills` component to display `SkillDetails` on click on a `Skill`
+  - Update `SkillInterface` with a new field: `details`
+  - Update `skills` data
+  - Add `sharp` npm package
+  
   ## 1.2.0 (2023-10-20)
 
   ### feat: LazyLoading Components on scroll + Optimizing images

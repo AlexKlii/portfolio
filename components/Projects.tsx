@@ -99,6 +99,7 @@ export default function Projects() {
                                             <SocialIcon
                                                 key={ressource.id}
                                                 url={ressource.url}
+                                                target='_blank'
                                                 fgColor={isHoveringId === ressource.id ? green : theme === 'dark' ? 'gray' : 'white'}
                                                 onMouseEnter={() => onMouseEnter(ressource.id)}
                                                 onMouseLeave={() => onMouseLeave()}
@@ -106,6 +107,7 @@ export default function Projects() {
                                             />
                                             : <Link key={ressource.id}
                                                 href={ressource.url}
+                                                target='_blank'
                                                 onMouseEnter={() => onMouseEnter(ressource.id)}
                                                 onMouseLeave={() => onMouseLeave()}
                                                 className={isHoveringId === ressource.id ? 'text-green' : 'dark:text-gray-light text-white'}
