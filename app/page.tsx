@@ -58,7 +58,7 @@ const Home = () => {
 
     return (!isLoadingSocialLinks && !isLoadingHero &&
         <Providers>
-            <div className='dark:bg-gray-dark bg-green-light text-white snap-y h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
+            <div className='dark:bg-gray-dark bg-green-light text-white h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar dark:scrollbar-track-gray-600/20 scrollbar-track-gray-dark/95 scrollbar-thumb-green'>
                 <main>
                     <Header socialLinks={socialLinks} />
 
@@ -85,9 +85,6 @@ const Home = () => {
                     <section id='contact' className='h-screen'>
                         <ContactMeComponentWithLazyLoad />
                     </section>
-
-                    {/* This section is only needed for the smallest screen resolutions (Galaxy S8+ / Iphone SE) */}
-                    <section className='snap-end h-44 sm:hidden'></section>
 
                     <Footer src={hero!.src}></Footer>
                 </main>
