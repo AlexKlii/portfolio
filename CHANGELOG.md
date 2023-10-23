@@ -2,6 +2,12 @@
 
 ## 1.4.1 (2023-10-23)
 
+### fix: Fix blank CV
+
+- Update pdf file to fix blank CV
+
+## 1.4.1 (2023-10-23)
+
 ### fix: Update CV pdf
 
 - Update `CV_Alexandre_Caliaro` pdf file
