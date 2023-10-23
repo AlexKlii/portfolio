@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.1 (2023-10-23)
+
+### fix: Update CV pdf
+
+- Update `CV_Alexandre_Caliaro` pdf file
+- Remove `snap-y` from `page.tsx` file
+
 ## 1.4.0 (2023-10-23)
 
 ### feat: Implement download CV
