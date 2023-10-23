@@ -7,6 +7,7 @@ import { SocialLink } from '@/typings/SocialLink'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import DarkModeButton from '@/components/DarkModeButton'
+import { MdDownload } from 'react-icons/md'
 
 const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
     const [isHoveringId, setIsHovered] = useState(0)
@@ -36,6 +37,7 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
                     <SocialIcon
                         key={socialLink.id}
                         url={socialLink.url}
+                        target='_blank'
                         fgColor={isHoveringId === socialLink.id ? green : theme === 'dark' ? 'gray' : 'white'}
                         onMouseEnter={() => onMouseEnter(socialLink.id)}
                         onMouseLeave={() => onMouseLeave()}
@@ -73,6 +75,10 @@ const Header = ({ socialLinks }: {socialLinks: SocialLink[]}) => {
                         </p>
                     </Link>
                 </div>
+
+                <Link href='assets/CV_Alexandre_Caliaro.pdf' className='text-white dark:text-gray-light dark:hover:text-green hover:text-gray-dark pr-5 pt-1 text-3xl' target='_blank' download>
+                    <MdDownload></MdDownload>
+                </Link>
                 
                 <DarkModeButton />
             </motion.div>
